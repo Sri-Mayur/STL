@@ -23,5 +23,12 @@ int main(){
         cout<<v[i]<<" "; //It will print 4 5 7 8
     }
 
+    // v.resize() will add spaces in the vector and add 0 to the empty indices if duplication is done atleast once.
+
+    v.resize(5);
+    for(int i=0; i<v.size(); i++){
+        cout<<v[i]<<" "; //It will print 4 5 7 8 4 5 7 8 0
+    }
+
     return 0;
 }
